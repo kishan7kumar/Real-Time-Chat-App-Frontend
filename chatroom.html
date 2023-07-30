@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chit-Chat</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/chatroom.css" />
+  </head>
+  <body>
+    <div class="chatroom-wrapper">
+      <div class="chatroom-container">
+        <div class="topbar">
+          <div class="title">Chat Wall</div>
+          <button class="logout-button" type="button">Logout</button>
+        </div>
+        <div class="chat-overflow-wrapper">
+          <div class="chat-container"></div>
+        </div>
+        <div class="chat-input">
+          <textarea
+            autofocus
+            class="chat-textarea"
+            cols="30"
+            rows="2"
+          ></textarea>
+          <button class="post-button" disabled="true" type="button">
+            Post
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/moment.min.js" defer></script>
+    <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/chatroom.js" defer></script>
+  </body>
+</html>
